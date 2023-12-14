@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-left">
+                <h3>Stay updated!</h3>
+
+                <p>Join 60,000+ product managers receiving monthly
+                    updates on:
+                </p>
+
+                <div class="point">
+                    <img src="./images/icon-list.svg">
+                    <p>Product discovery and building what matters</p>
+                </div>
+
+                <div class="point">
+                    <img src="./images/icon-list.svg">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+
+                <div class="point">
+                    <img src="./images/icon-list.svg">
+                    <p>And much more!</p>
+                </div>
+
+                <form action="">
+                    <label for="email">Email address</label>
+                    <input type="email" id="myEmail"
+                      placeholder="abc@gmail.com" required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+
+                    <input type="checkbox" id="btnControl" />
+                    <label for="btnControl" class="btn">Subscribe to monthly newsletter</label>
+                      
+                </form>
+            </div>
+
+            <div class="card-right">
+                <img src="./images/illustration-sign-up-desktop.svg">
+            </div>
+
+        </div>
+
+        <div class="thank-you-card hide">
+            <img src="./images/icon-list.svg">
+            <h2>Thanks for subscribing!</h2>
+
+            <p>A confirmation email has been sent to 
+                <span id="showText"></span>. Please open it and click 
+                the button inside to confirm your subscription.
+            </p>
+
+            <button class="btn thank-you-button">Dismiss message</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
